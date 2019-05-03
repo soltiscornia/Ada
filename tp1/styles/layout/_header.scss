@@ -1,0 +1,130 @@
+
+.header-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+}
+
+    .main-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-family: $logo-font;
+            font-size: $logo-font-big-size;
+            color: $secondary-color;
+            margin: 40px 0;;
+            text-align: center;
+        }
+
+        ul  {           
+            font-family: $main-font;
+            color: $main-color;
+            justify-content: space-around;
+            display: flex;
+            font-weight: bold; 
+        
+                li {
+                    line-height: 40px;
+                    padding: 0 10px;
+                    margin: 0 10px;   
+                }
+    
+            a:hover {
+                color: $secondary-color;
+            }
+
+            a:hover i {
+                color: $secondary-color;
+            }
+        }
+
+        nav {
+            width: 100%;
+    
+                @media (max-width: 650px) {
+                display: none; 
+            }
+        }
+
+.sub-menu-container {
+    position: relative;
+
+        i {
+            vertical-align: 3px;
+        }
+    
+        &:hover .sub-menu {
+        visibility: visible;
+        cursor: pointer;
+        }
+}
+
+.sub-menu {
+    position: absolute;
+    background-color:white;
+    left: -10px;
+    top: 29px;
+    width: 110px;
+    flex-direction: column;
+    z-index: 1;
+    visibility: hidden;
+}
+
+    .header-image-container {
+        justify-content: center;
+        width: 100%;
+
+            img {
+                width: 100%;
+                flex-shrink: 1;
+            }
+    }
+}
+
+
+/* Menú para media max width 400px (mobile) y 650px*/
+
+.menu-small-screen {
+    display: none;
+    position: relative;
+    background-color: $secondary-color;
+    width: 90%;
+    height: 30px;;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+        @media (max-width: 650px) {
+            display: flex;   
+        }
+
+        h4 {
+            display: flex;
+            align-items: flex-end;              
+        }
+
+        ul {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 20px;
+            left: 32%;
+            background-color: $secondary-color;
+            z-index: 1;
+            align-items: center;
+            
+
+            a {
+                color: white;
+                font-weight: 400;
+            }
+        }
+
+        &:hover ul {
+            display: flex;
+        }
+}

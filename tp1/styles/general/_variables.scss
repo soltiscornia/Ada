@@ -1,0 +1,17 @@
+
+/* Fuentes */ 
+$main-font: 'IBM Plex Mono', monospace; /* Es la fuente que está en la mayoría de los párrafos y títulos*/
+$paragraph-size: 16px;
+$small-size: 14px; /* Para las volantas*/
+$big-size: 20px; /* Este es el tamaño para los títulos de las noticias, por ejemplo*/
+$medium-size: 17px; /* Este es el tamaño para el nav y los títulos de las secciones*/
+$logo-font: 'Indie Flower', cursive; /* Es la fuente del banner*/
+$logo-font-big-size: 50px; 
+
+
+/* Colores */
+$secondary-color: #e98a4b; /*Título del banner*/
+$title-color: black; /* Títulos de noticias y algunos más*/
+$main-color: #686666; /*Para la mayoría del texto y creo que también para losíconos*/
+$items-color: #f7c9d0; /*Para botones y cintillos, tipo Sobre mí y Newsletter*/
+$line-color: #68666679 /*Para las líneas divisorias, es el mismo color que $main-color, pero con un poco de transparencia*/

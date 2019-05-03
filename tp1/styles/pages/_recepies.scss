@@ -1,0 +1,315 @@
+/*
+
+ÍNDICE:
+
+1- ID para estilos generales.
+    1.1- Ícono y texto bajo la foto del banner.
+    1.2- Receta general.
+        1.2.1 - Íconos de redes sociales.
+        1.2.2 - Foto de la receta.
+        1.2.3 - Autora y fecha.
+        1.2.4 - Likes, comentarios y share.
+        1.2.5 - Proceso de la receta.
+        1.2.6 - Breve descripción.
+        1.2.7 - Frase citada.
+        1.2.8 - Lista de ingredientes.      
+
+*/
+
+/* 1- ID para estilos generales */
+
+#recepies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $main-font;
+    color: $main-color;
+    width: 100%;
+
+/*CONTENEDOR GENERAL*/
+
+    body {
+        @media (max-width: 700px) {
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    .general-container {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        align-items: flex-start;
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+
+    }
+
+    /* 1.1 - Ícono y texto bajo la foto del banner */
+
+           .route-page {  
+                display: flex;
+                justify-items: flex-start;
+                flex-grow: 1;
+                
+                    .home-and-archive {
+                        font-weight: bold;
+                        @media (max-width: 450px) {
+                            display: flex;
+                            width: 300px;
+                            flex-wrap: wrap;
+                            flex-direction: column;
+                        }
+                    }
+        
+                    #home-icon {
+                        padding-top: 23px;
+                    }
+
+                    .single-post-blog {
+                        color: #686666;
+                        @media (max-width: 450px) {
+                            display: flex;
+                            flex-wrap: wrap;
+                        } 
+                    }
+            }
+
+    section {
+        display: flex;
+    }
+
+    .content-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        @media (max-width: 450px) {
+            display: flex;   
+        }
+    }
+
+    /* 1.2 - Receta general */
+
+            .recipe-details {
+                font-family: $main-font;
+                color: $main-color;
+                flex-direction: column;
+                display: flex;
+                flex-grow: 1;
+                justify-content: center;
+                @media (max-width: 450px) {
+                    display: flex;
+                    margin: 0; 
+                }
+
+        /* 1.2.1 - Íconos de redes sociales */
+
+                    ul {
+                        @media (max-width: 700px) {
+                            display: flex;
+                            width: 100%;
+                            flex-direction: column;
+                            margin: 0;
+                        }
+                    }
+
+                    .social-media-icons {
+                        display: flex;
+                        justify-content: space-around;
+                        flex-direction: column;
+                        list-style: none;
+                        @media (max-width: 700px) {
+                            display: flex;
+                            width: 100%;
+                            margin: 0;
+                            flex-direction: row;   
+                        }
+                        
+                        
+                            .margin-icons {
+                                margin: 20px;
+
+                                
+                                .fa-facebook-f {
+                                    background-color: blue;
+                                    color: white;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    line-height: 30px;
+                                }
+
+                                .fa-twitter {
+                                    background-color: lightblue;
+                                    color: white;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    line-height: 30px;
+                                }
+
+                                .fa-google-plus-g {
+                                    background-color: red;
+                                    color: white;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    line-height: 30px;
+                                }
+
+                                .fa-instagram {
+                                    background-color: burlywood;
+                                    color: white;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    line-height: 30px;
+                                }
+
+                                .fa-pinterest-p {
+                                    background-color: red;
+                                    color: white;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    line-height: 30px;
+                                }
+                        
+                            }
+                        }
+
+        /* 1.2.2 - Foto de la receta */
+
+                        .recipe-img {
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 50px;
+                                @media (max-width: 700px) {
+                                    flex-direction: column;
+                                }                
+                            
+                                img {
+                                    width: 600px;
+                                    @media (max-width: 700px) {                                        
+                                       width: 100%;   
+                                    }
+                                }  
+                        }
+
+                                .img-radius {
+                                    border-radius: 40px 40px 40px 40px;
+                                }
+
+        /* 1.2.3 - Autora y fecha */
+
+                .news-info {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 50px; 
+                    margin-top: 30px;
+                    width: 600px;
+                    @media (max-width: 700px) {
+                        width: 100%;
+                        margin: 0; 
+                    }        
+                }
+            
+                .info-details {
+                    display: flex;
+                    align-items: flex-start;
+                    font-size: $small-size;
+                }         
+            
+        /* 1.2.4 - Likes, comentarios y share */
+
+                .comments-info {
+                    display: flex;
+                    align-items: flex-start;
+                    font-size: $small-size; 
+                        a {
+                            width: 28px;
+                        }
+            }         
+
+        /* 1.2.5 - Proceso de la receta */
+
+            .recipe-text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                @media (max-width: 700px) {
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+
+                    .important-info {
+                        @media (max-width: 700px) {
+                            width: 100%;
+                            margin-top: 10px;
+                            margin-left: 30px;
+                        }
+                    }
+            }      
+
+            .recipe-steps {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-left: 50px;
+               
+                    h2 {
+                        font-weight: bold;
+                    }
+                    
+        /* 1.2.6 - Breve descripción */
+
+                    .recipe-description {
+                        color: #686666;
+                    }
+
+        /* 1.2.7 - Frase citada */
+
+                    blockquote {
+                        border-left: 2px solid #e98a4b;                   
+                    }
+
+                            .quote {
+                                font-weight: bold;
+                                margin-left: 30px;
+                                @media (max-width: 700px) {
+                                    display: flex;
+                                    width: 100%;
+                                }
+                            }
+
+                            .author-name {
+                                font-weight: normal;
+                                margin-left: 30px;
+                                margin-top: -10px;
+                            }                    
+
+        /* 1.2.8 - Lista de ingredientes */
+
+                        ul {
+                            list-style: none;
+                            margin-left: 38px;
+
+                            li::before {
+                                content: "• ";
+                                color: $secondary-color;
+                                width: 1em;
+                                margin-left: -em;
+                            }
+                        }
+                }
+        }        
+}

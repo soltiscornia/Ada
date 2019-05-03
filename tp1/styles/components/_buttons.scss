@@ -1,0 +1,44 @@
+
+/* Buttons del secondary-menu de Home */
+.button1 {
+    background-color: white;
+    height: 25px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    line-height: normal;
+    font-weight: bold;
+    position: absolute;
+    margin: auto;
+    border-radius: 20px;
+
+      /* Hover de los buttons*/
+
+    &:hover { 
+        background-color: $secondary-color;
+        cursor: pointer;
+        }
+}
+
+.button2 {
+  background-color: $items-color;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  line-height: 30px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 20px;
+
+    /* Hover de los buttons*/
+
+  &:hover { 
+      background-color: white;
+      cursor: pointer;
+      }
+}
+

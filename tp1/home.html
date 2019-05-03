@@ -1,0 +1,270 @@
+<!--
+
+ÍNDICE:
+
+1- HEAD - Links útiles de la página.
+2- BODY - Cuerpo general de la página.
+    2.1 - HEADER
+        2.1.1 - Título y menú principal.
+        2.1.2 - Menú para media queries.
+    2.2 - CONTENEDOR GENERAL.
+        2.2.1 - Menú slide de imágenes.
+        2.2.2 - Columna contenedora de secciones.
+            a) Menú secundario.
+            b) Main: video y noticias de recetas.
+            c) Aside: "sobre mí".
+            d) Footer: links a redes sociales.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+1 ---------- HEAD - Links útiles de la página ---------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi blog de cocina</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/css/main.css" />
+
+</head>
+
+<!--
+2 ---------- BODY -Cuerpo general de la página ---------->
+
+<body id="home">
+
+    <!--
+    2.1 ---------- HEADER ---------->
+
+    <header>
+        <div class="header-container">
+
+            <!--
+        2.1.1 ---------- Título y menú principal ---------->
+
+            <div class="main-menu">
+                <h1>Mi blog de cocina</h1>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li class="sub-menu-container"><a href="#">PLATOS<i class="fas fa-sort-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="recepies.html">Ensaladas</a></li>
+                                <li>Carne</li>
+                                <li>Helado</li>
+                            </ul>
+                        </li>
+                        <li><a href="#aboutme">SOBRE MI</a></li>
+                        <li><a href="#contact">CONTACTO</a></li> <!-- Redireccionamos a footer (redes sociales) -->
+                    </ul>
+                </nav>
+
+                <!--
+        2.1.2 ---------- Menú para media queries ---------->
+
+                <div class="menu-small-screen">
+                    <!-- Max-width 400px (mobile) y max width 650px -->
+                    <h4><i class="fas fa-bars"></i>MENU</h4>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="recepies.html">PLATOS</a></li>
+                        <li><a href="#aboutme">SOBRE MI</a></li>
+                        <li><a href="#contact">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--
+    2.2 ---------- CONTENEDOR GENERAL ---------->
+
+    <div class="content">
+
+        <!--
+        2.2.1 ---------- Menú slide de imágenes ---------->
+
+        <div class="slider">
+            <!-- Set de cuatro imágenes con hover aplicado -->
+            <ul>
+                <li><a href="recepies.html" class="slider-image">
+                        <img src="img/img-home/img-1.jpg">
+                        <div class="slider-text">
+                            <p>Mayo 17, 2017 | 5 comentarios</p>
+                            <h5>"Los mejores tacos del país, en pocos pasos"</h5>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#" class="slider-image">
+                        <img src="img/img-home/img-2.jpg">
+                        <div class="slider-text">
+                            <p>Mayo 9, 2017 | 8 comentarios</p>
+                            <h5>"Las sopas más ricas para este invierno"</h5>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#" class="slider-image">
+                        <img src="img/img-home/img-3.jpg">
+                        <div class="slider-text">
+                            <p>Mayo 2, 2017 | 11 comentarios</p>
+                            <h5>"Postres livianos y sanos"</h5>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#" class="slider-image">
+                        <img src="img/img-home/img-4.jpg">
+                        <div class="slider-text">
+                            <p>Abril 25, 2017 | 5 comentarios</p>
+                            <h5>"Entradas para todos los gustos"</h5>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--
+        2.2.2 ---------- Columna contenedora de secciones ---------->
+
+        <div class="big-column">
+            <!-- Acá comienza la columna grande contenedora, que incluye el footer-->
+
+            <!--
+            a) Menú secundario
+            -->
+
+            <div class="secondary-menu">
+                <ul>
+                    <li>
+                        <img src="img/img-home/platos.jpeg">
+                        <a href="recepies.html" class="button1">PLATOS</a>
+                    </li>
+                    <li>
+                        <img src="img/img-recepies/recetas.JPG">
+                        <a href=# class="button1">RECETAS</a>
+                    </li>
+                    <li>
+                        <img src="img/img-home/exoticos.JPG">
+                        <a href=# class="button1">EXOTICOS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="columns-container">
+
+            <!--
+            b) Main: video y noticias de recetas.
+            -->
+
+                <main>
+
+                    <!-- Video -->
+
+                    <section class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jc8vDax6zZQ" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="video"></iframe>
+                        <div class="video-description"> 20 de abril | ¿Cómo preparar las mejores hamburguesas?</div>
+                    </section>
+
+                    <!-- Noticias de recetas -->
+
+                    <section class="news-container">
+                        <article class="news">
+                            <div class="news-content">
+                                <img src="img/img-home/nota1.JPG">
+                                <div class="news-text">
+                                    <div class="news-info">
+                                        <div class="info-details">By Maria | Mayo 19, 2017</div>
+                                        <div class="comments-info">
+                                            <a href=#><i class="far fa-heart"></i></a>20
+                                            <a href=#><i class="far fa-comments"></i></a>10
+                                            <a href=#><i class="fas fa-share-alt"></i></a>
+                                        </div>
+                                    </div>
+                                    <a href=#>
+                                        <h6>Delicias dulces</h6>
+                                    </a>
+                                    <p>En este artículo van a poner una receta muy simple, sana y muy rica!</p>
+                                    <a href="recepies.html" class="button2">Leer más</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news">
+                            <div class="news-content">
+                                <img src="img/img-home/nota2.JPG">
+                                <div class="news-text">
+                                    <div class="news-info">
+                                        <div class="info-details">
+                                            <div>By Maria | Mayo 19, 2017</div>
+                                        </div>
+                                        <div class="comments-info">
+                                            <a href=#><i class="far fa-heart"></i></a>
+                                            <span>43</span>
+                                            <a href=#><i class="far fa-comments"></i></a>
+                                            <span>70</span>
+                                            <a href=#><i class="fas fa-share-alt"></i></a>
+                                        </div>
+                                    </div>
+                                    <a href=#>
+                                        <h6>Comidas simples</h6>
+                                    </a>
+                                    <p>En este artículo van a poner una receta muy simple, sana y muy rica!</p>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </main>
+
+                <!--
+            c) Aside: "Sobre mí"
+                -->
+
+                <aside id="aboutme">
+                    <h6 class="lead">SOBRE MI</h6>
+                    <img src="img/img-home/perfil.jpg">
+                    <div class="profile-description">
+                        <h7>Natalia Guida</h7>
+                        <p>Tengo 23 años, hace dos que estudio cocina y soy fanática de la comida. Espero que les
+                            guste mi contenido.</p>
+                    </div>
+                    <h6 class="lead">NEWSLETTER</h6>
+                </aside>
+            </div>
+
+            <!-- Se cierra la división de la columna principal en Main y Aside -->
+
+            <!--
+            d) Footer: links a redes sociales
+            -->
+            
+            <footer>
+                <div class="footer-container">
+                    <ul id="contact">
+                        <li><a href="https://www.facebook.com/"><i
+                                    class="fab fa-facebook-f"></i><span>FACEBOOK</span></a></li>
+                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i><span>TWITTER</span></a></li>
+                        <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i
+                                    class="fab fa-google-plus-g"></i><span>GOOGLE+</span></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i><span>LINKEDIN</span></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/?hl=es-la"><i
+                                    class="fab fa-instagram"></i><span>INSTAGRAM</span></a>
+                        <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i><span>YOUTUBE</span></a>
+                        </li>
+                        </li>
+                    </ul>
+                    <a href="home.html"><i class="fas fa-arrow-circle-up" id="mobile-icon"></i></a>
+                </div>
+            </footer>
+        </div>
+</body>
+
+</html>

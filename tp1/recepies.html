@@ -1,0 +1,236 @@
+<!--
+
+ÍNDICE:
+
+1- HEAD - Links útiles de la página.
+2- BODY - Cuerpo general de la página.
+    2.1 - HEADER
+        2.1.1 - Título y menú principal.
+        2.1.2 - Menú para media queries.
+        2.1.3 - Banner.
+    2.2 - CONTENEDOR GENERAL DE LA RECETA.
+        2.2.1 - Ruta enlace de la página.
+        2.2.2 - Foto de la receta e íconos de redes sociales.
+        2.2.3 - Autora y fecha.
+        2.2.4 - Likes, comentarios y share.
+        2.2.5 - Título, breve resumen y frase célebre.
+        2.2.6 - Ingredientes.
+    2.3 - FOOTER
+        2.3.1 - Links a redes sociales.
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+
+1- HEAD - Links útiles y título de página
+
+-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/css/main.css" />
+</head>
+
+<!--
+    
+2- BODY - Cuerpo general de la página
+
+-->
+
+<body id="recepies">
+
+    <!--
+        
+        2.1 ---------- HEADER ---------->
+    <header>
+
+        <!--
+            2.1.1 ---------- Título y menú principal ---------->
+
+        <div class="header-container">
+            <div class="main-menu">
+                <h1 class="page-title">Mi blog de cocina</h1>
+                <nav>
+                    <ul class="menu-list">
+                        <li><a href="home.html">HOME</a></li>
+                        <li class="sub-menu-container"><a href="#">PLATOS<i class="fas fa-sort-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="recepies.html">Ensaladas</a></li>
+                                <li>Carne</li>
+                                <li>Helado</li>
+                            </ul>
+                        </li>
+                        <li><a href="home.html#aboutme">SOBRE MI</a></li>
+                        <li><a href="#contact">CONTACTO</a></li> <!-- (Redireccionamos a Footer, a la parte de redes -->
+                    </ul>
+                </nav>
+
+                <!--
+            2.1.2 ---------- Menú para media queries ---------->
+
+                <div class="menu-small-screen">
+                    <!-- Max-width 400px (mobile) y max width 650px-->
+                    <h4><i class="fas fa-bars"></i>MENU</h4>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="recepies.html">PLATOS</a></li>
+                        <li><a href="#aboutme">SOBRE MI</a></li>
+                        <li><a href="#contact">CONTACTO</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+            <!--
+            2.1.3 ---------- Banner ---------->
+
+            <div class="header-image-container">
+                <img src="img/banner.jpg" class="img-banner" />
+            </div>
+        </div>
+    </header>
+
+    <!--
+        2.2 ---------- CONTENEDOR GENERAL DE LA RECETA ---------->
+
+    <!--
+            2.2.1 ---------- Ruta enlace de la página ---------->
+
+    <div class="general-container">
+        <div class="route-page">
+            <i id="home-icon" class="fas fa-home"></i>
+            <h4 class="home-and-archive">Home > Archive ></h4>
+            <h4 class="single-post-blog">Single Post Blog</h4>
+        </div>
+        <div class="content-container">
+            <section class="recipe-details">
+
+                <!--
+            2.2.2 ---------- Foto de la receta e íconos de redes sociales---------->
+
+                <div class="recipe-img">
+                    <ul class="social-media-icons">
+                        <li class="margin-icons"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            
+                        </li>
+                        <li class="margin-icons"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            
+                        </li>
+                        <li class="margin-icons"><a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fab fa-google-plus-g"></i></a>
+                            
+                        </li>
+                        <li class="margin-icons"><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                            
+                        </li>
+                        <li class="margin-icons"><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                        </li>
+                    </ul>
+                    <img src="../tp1-ada/img/img-recepies/recetas.JPG" class="img-radius" />
+                </div>
+
+                <!--
+            2.2.3 ---------- Autora y fecha ---------->
+
+                <div class="recipe-text">
+
+                    <div class="important-info">
+
+                        <div class="news-info">
+                            <div class="info-details">
+                                <div>By Maria | Mayo 19, 2017</div>
+                            </div>
+
+                            <!--
+            2.2.4 ---------- Likes, comentarios y share ---------->
+
+                            <div class="comments-info">
+                                <a href=#><i class="far fa-heart"></i></a>
+                                <span>20</span>
+                                <a href=#><i class="far fa-comments"></i></a>
+                                <span>10</span>
+                                <a href=#><i class="fas fa-share-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+            2.2.5 ---------- Título, breve resumen y frase célebre ---------->
+
+                    <div class="recipe-steps">
+                        <h2>Pionono salado</h2>
+                        <p class="recipe-description">Muy sencillo, económico y rápido, sirve para rellenar con
+                            ingredientes
+                            dulces
+                            o salados. aquí va la
+                            receta bien caserita, como lo hacía mi abuela.</p>
+                        <div class="famous-quote">
+                            <p>
+                                <blockquote>
+                                    <h4 class="quote">"La cocina es algo que viene de generación en generación, desde
+                                        nuestros
+                                        ancestros hasta
+                                        ahora en nuestra actualidad. Muchas recetas tradicionales."</h4>
+                                    <br />
+                                    <h4 class="author-name">Elena Remoto</h4>
+                                </blockquote>
+                            </p>
+                        </div>
+
+                        <!--
+            2.2.6 ---------- Ingredientes ---------->
+
+                        <ul class="ingredients-list">
+                            <li>2 cebollas moradas.</li>
+                            <li>6 champignones.</li>
+                            <li>4 cdas. de pan rallado.</li>
+                            <li>1 atado de perejil.</li>
+                            <li>2 chiles jalapeños.</li>
+                            <li>1 Paquete de queso dambo en fetas.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!--
+        2.3 ---------- FOOTER ---------->
+
+        <!--
+            2.3.1 ---------- Links a redes sociales ---------->
+
+        <footer>
+            <div class="footer-container">
+                <ul id="contact">
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>FACEBOOK</span></a>
+                    </li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i><span>TWITTER</span></a></li>
+                    <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i
+                                class="fab fa-google-plus-g"></i><span>GOOGLE+</span></a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i><span>LINKEDIN</span></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/?hl=es-la"><i
+                                class="fab fa-instagram"></i><span>INSTAGRAM</span></a>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i><span>YOUTUBE</span></a></li>
+                    </li>
+                </ul>
+                <a href="recepies.html"><i class="fas fa-arrow-circle-up" id="mobile-icon"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
